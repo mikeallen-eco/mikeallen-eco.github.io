@@ -1,0 +1,190 @@
+/* =========================
+   Base reset & variables
+   ========================= */
+
+:root {
+  --max-width: 900px;
+  --text-color: #222;
+  --muted-text: #666;
+  --link-color: #1a5fb4;
+  --border-color: #e5e5e5;
+  --bg-color: #ffffff;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* =========================
+   Layout
+   ========================= */
+
+header {
+  border-bottom: 1px solid var(--border-color);
+  background: #fff;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+footer {
+  max-width: var(--max-width);
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+h1, h2, h3 {
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+  margin-bottom: 3rem;
+}
+
+.hero {
+  margin-top: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+}
+
+.about img {
+  float: right;
+  max-width: 220px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .about img {
+    float: none;
+    display: block;
+    margin: 1.5rem auto;
+  }
+}
+
+/* =========================
+   Images & figures
+   ========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 2rem 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin-top: 0.5rem;
+}
+
+/* =========================
+   Lists
+   ========================= */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* =========================
+   Quotes / callouts
+   ========================= */
+
+blockquote {
+  margin: 2.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 4px solid var(--border-color);
+  color: var(--muted-text);
+  font-style: italic;
+}
+
+/* =========================
+   Utility
+   ========================= */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
